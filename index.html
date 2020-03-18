@@ -1,56 +1,127 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Google</title>
-	<style>
-		body{
-			font-family: Arial, sans-serif;
-		}
-		h1{
-			padding-top: 100px;
-			font-size: 150px;
-			text-align: center;
-			line-height: 50%;
-			color:skyblue;
-		}
-		button{
-			height: 50px;
-			width: 150px;
-			font-size: 20px;
-			text-align: center;
-
-		}
-		#text{
-			width:800px;
-			height:20px;
-			margin:auto;
-		}
-		#input{
-			width:800px;
-			margin: auto;
-		}
-		#buttons{
-			width:310px;
-			margin:auto;
-			padding:5px;
-		}
-	</style>
-</head>
-<body>
-	<h1>Google</h1>
-	<form>
-		<div id="input">
-			<input id= "text" type="text">
-			<div id ="buttons">
-				<button type="submit">
-					Search
-				</button>
-				<button>
-					lucky
-				</button>
-			</div>
-		</div>
-	</form>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Google</title>
+        <style>
+            body {
+                font-family: arial, sans-serif;
+            }
+            
+            img {
+                max-width: 100%;
+                display: block;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 185px;
+            }
+            
+            
+            
+            #search-box {
+                width: 600px;
+                height: 40px;
+                text-align: center;
+                margin-top: 30px;
+                border-radius: 25px;
+                border-style: solid;
+                border-color: lightgray;
+                border-width: 1px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            
+            button {
+                margin: 25px 10px;
+                width:130px;
+                height:35px;
+                position: relative;
+                left: 39%;
+                background-color: #ededed;
+                border-style: none;
+                border-radius: 3px;
+                font-size: 90%;
+                color:#7d7d7d;
+            }
+            
+            header {
+                list-style-type: none;
+                padding: 0;
+                display: inline;
+            }
+            
+            li {
+                display: inline-block;
+                font-size:13px;
+            }
+            
+            .about {
+                padding-left: 10px;
+                top: 25px;
+            }
+            
+            .store {
+                padding-left: 10px;
+                top: 25px;
+            }
+            
+            .gmail {
+                text-align: center;
+                top: 0;
+                position: absolute;
+                right: 150px;
+                top: 25px;
+            }
+            
+            .images {
+                padding-right: 10px;
+                top: 0;
+                position: absolute;
+                right: 200px;
+                top: 25px;
+            }
+            
+            .searchglass {
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 440px;
+                top: 178px;
+            }
+            
+            .microphone {
+                width: 17px;
+                height: auto;
+                position: absolute;
+                left: 990px;
+                top: 175px;
+            }
+        
+        </style>
+    </head>
+    <body>
+       <div class="container">
+          <header>
+              <nav>
+                  <ul>
+                    <li class="about">About</li>
+                    <li class="store">Store</li>
+                    <li class="gmail">Gmail</li>
+                    <li class="images">Images</li>
+                  </ul>
+              </nav>
+          </header>
+           <img src="img/google.png" alt="Google" width="300">
+           <img class="searchglass" src="img/glass.jpg" alt="search glass">
+           <img class="microphone" src="img/microphone.jpg" alt="microphone">
+           <form>
+               <input id="search-box" type="text" name="search" id="search" placeholder="Search here"/>
+          		<button id="search">Google Search</button>
+           		<button id="lucky">I'm Feeling Lucky</button>
+           	</form>
+       </div>
+        
+    </body>
 </html>
